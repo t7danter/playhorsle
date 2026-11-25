@@ -1,119 +1,73 @@
-# Horsle
+# Horsle: The Horse Wordle With a Fixed Answer
 
-A guide to **Horsle** — a five-letter word game where the answer is never a mystery: it is always **HORSE**.
+Most word games guard their answer like a secret. This one hands it over in the first line and then asks whether you still want to play. Horsle is a horse wordle in the strictest sense: five letters, six guesses, green and gold and gray tiles, and one answer that never changes. The word is HORSE, and it is printed on the page before you type anything at all.
 
-> Play it here: **https://playhorsle.com/**
+That single decision rewrites the experience. In an ordinary horse wordle you are hunting for information you do not have, so every guess is a small act of deduction. In this horse wordle the information is already in front of you, and the interesting question becomes what kind of round you want to construct. You can finish in one row, or you can spend five guesses arranging a board that looks like the work of someone who suffered for it.
 
----
+## Why a fixed answer is more interesting than it sounds
 
-## What this is
+Strip away the mystery and what remains is craft. Every guess you do not need to make becomes a choice about tempo and appearance. Some players open with something dense in relevant letters and reveal a colourful grid before submitting the answer. Others go straight to the point, accept the one-row result, and move on. Neither approach is punished, because a horse wordle of this kind does not score elegance.
 
-Horsle keeps the Wordle format — five letters, six guesses, green/gold/gray feedback — and removes the guessing of the *word*. The answer is fixed and stated up front, so the game becomes about **the route you choose**: solve it in one row, or build a longer, more elaborate grid first.
+A horse wordle with a stated answer is trivial to explain to someone who has never played a word game. You do not have to teach a ruleset, describe a daily schedule, or defend an arbitrary difficulty curve. You say the answer, you say six guesses, and the person is playing within seconds.
 
-- Five letters, six guesses, free, no account
-- Runs in the browser, no download
-- The board sits above the guide, so returning players can type immediately
+## How a round actually runs
 
-Play is not about finding a hidden word. It is about deciding what kind of result you want to produce.
+Type a five-letter English word, then press Enter. A valid guess fills a row and colours each letter. An incomplete entry stays in place and does not consume a guess, and a word that is not in this version's dictionary is rejected the same way, so a typo costs you nothing but a second of attention.
 
-## Quick start
-
-1. Open https://playhorsle.com/
-2. Type any valid five-letter English word, press **Enter**
-3. Read the feedback, then either submit **HORSE** and finish, or keep building
-4. Use **Play again** after the round ends
-
-No timer, no daily streak on the fixed-answer modes.
-
-## How a round works
-
-- Enter a five-letter word with the on-screen keyboard or a physical keyboard, then press Enter.
-- A **valid** guess fills a row and reveals feedback for each letter.
-- An **incomplete** entry (fewer than five letters) or a **word outside this version's dictionary** leaves the row editable and does **not** spend a guess. Typos are free.
-- Submitting **HORSE** wins immediately — you do not have to use all six rows.
-- Six valid guesses without HORSE ends the round as a loss and reveals the answer.
-- Finished boards stop accepting letters. You can then check statistics, share the pattern, or start again.
+Submit HORSE and the round ends immediately. Six valid guesses without it end the round as a loss and reveal the answer. Finished boards stop accepting letters, and you can look at statistics, copy the pattern, or start a new horse wordle from an empty grid.
 
 ## Reading the three clues
 
-| Symbol | Color | Meaning |
-| --- | --- | --- |
-| ✓ | Green | Letter and position both match |
-| ↔ | Gold | The letter exists in the answer, but somewhere else |
-| − | Gray | No unused copy of that letter remains |
+A green tile with a check mark means the letter is correct in that exact position. A gold tile with a two-way arrow means the letter belongs somewhere else in the answer. A gray tile with a minus sign means there is no unused copy of that letter left.
 
-Every tile carries a symbol and a text label as well as a color, so the clue does not depend on color vision. Settings offers a higher-contrast palette.
+Each tile carries a symbol and a text label as well as a colour, so a clue never depends on someone distinguishing green from gold. The keyboard keeps the strongest signal discovered for each letter during a round, which means a later gray copy never erases a green result you already earned. In a horse wordle where the answer is known, that memory matters less for survival and more for keeping a tidy record of what your route established.
 
-The on-screen keyboard keeps the **strongest** clue found for each letter during the round — a later gray copy never erases a green clue you already earned.
+## Repeated letters, worked out
 
-## Repeated letters
+Every letter in HORSE can be matched only once, because there is exactly one H, one O, one R, one S and one E. The game scores exact positions first, then spends whatever copies remain on letters found elsewhere, scanning from left to right.
 
-Each letter in the answer can support only one match. HORSE has exactly one H, one O, one R, one S and one E. The game matches exact positions first, then spends the remaining copies on letters found elsewhere, scanning left to right.
+Guess ROSES and you get an arrow for R, a check for O, an arrow for the first S, an arrow for E, and a minus for the final S, because the answer contains a single S and that copy is already accounted for. Guess EERIE and the last E takes the check while the earlier Es receive nothing. Those two examples cover almost every confusion people bring to a horse wordle, and they are worth reading once before you start experimenting with openers of your own.
 
-**ROSES** against HORSE → `R↔ O✓ S↔ E↔ S−`
+## Opening words people like
 
-O is in the right place. R, the first S and E belong elsewhere. HORSE contains only one S, and that copy is already used, so the final S gets a minus.
+STARE is a popular first move because it splits the board across three clue types at once: S and R sit elsewhere, E is correct, and T and A are absent. CHORE produces a different shape by parking familiar letters in new positions. Neither is better than the other, and no opening can grant an advantage when the answer is printed at the top of a horse wordle page.
 
-**EERIE** against HORSE → `E− E− R✓ I− E✓`
+Try one dense opener, then a sparse one, and compare the finished grids. A horse wordle played with deliberate choices looks different from one played by reflex, even though both end on the same word.
 
-The last E takes the only E in HORSE because its position is correct. The earlier E tiles receive nothing.
+## Three modes, three habits
 
-## Worked examples
+Classic keeps a single ongoing board in the browser. Leave halfway through a word and your input returns with the submitted rows when you come back. The play-again control unlocks only after a win or a loss, which keeps one route alive until you finish it.
 
-| Guess | Result |
-| --- | --- |
-| HORSE | All five match — instant win |
-| HOUSE | H, O correct; S, E correct; U absent |
-| WORSE | O, R, S, E correct; W absent |
-| CURSE | R, S, E correct; C, U absent |
-| SHORE | E correct; S, H, O, R all belong elsewhere |
-| STORE | E correct; S, O, R elsewhere; T absent |
-| CHORE | E correct; H, O, R elsewhere; C absent |
-| PLANT | No letters in HORSE — a full gray row, still a valid guess |
-| QUICK | All absent — a real word need not share any letter |
+Unlimited gives you a new board whenever you want, including during an unfinished round. Abandoning a board there is not recorded as a loss, so it is the mode for comparing openers or throwing away an experiment you regret. Both are the same horse wordle underneath; only the bookkeeping differs.
 
-Opening words worth trying: **STARE** (S and R elsewhere, E correct, T and A absent) and **CHORE** (familiar letters, different positions). There is no optimal opener — the answer is already known, so no starting word grants an advantage.
+The daily puzzle is a different animal. It hides a real answer for each UTC date, resets at midnight UTC, and keeps streaks with its own statistics. HORSE makes a reasonable opener there, but the hidden word is no longer the answer that a fixed horse wordle would print. If you want deduction rather than a decided route, that is the mode to open.
 
-## Modes
+## Sharing, statistics, and what the numbers mean
 
-| Mode | Behaviour |
-| --- | --- |
-| **Classic** | One ongoing board, saved in the browser. Leave mid-word and your input returns. "Play again" unlocks after a win or loss. |
-| **Unlimited** | "New game" is available even mid-round. Abandoned boards are not losses. Separate stats from Classic. |
-| **Horsedle** (daily) | A *hidden* answer for each UTC date, new puzzle at 00:00 UTC. HORSE is a fine opener here, not the answer. Finished boards lock until the next date and daily streaks apply. |
+When a round ends you can copy an emoji grid built from the actual feedback, which is the standard way people post a horse wordle result into a chat. The share button opens the device sheet where the browser supports it and falls back to copying where it does not. A download option renders a PNG locally with the mode, score and tile pattern; nothing is uploaded anywhere.
 
-Classic and Unlimited share the same fixed answer and letter rules, but their saved progress and statistics are tracked separately. Only Horsedle has streaks — the fixed-answer modes are available any time, so a daily counter would imply a restriction that does not exist.
+The horse wordle statistics panel counts completed games, win percentage, and the distribution of successful guess counts. A one-guess win fills the first bar. Losses affect games played and win percentage but never appear in a successful-guess bar. Reopening an old result does not count as another game, which keeps the numbers honest over a long run of short sessions.
 
-## Sharing and statistics
+## Dictionary and rejected words
 
-- **Copy result** puts an emoji grid built from your real feedback on the clipboard.
-- **Share result** opens the device share sheet where supported, falling back to copying.
-- **Download image** generates a PNG in the browser with the mode, score and tile pattern — it is created locally and never uploaded.
-- If automatic copying is blocked, a selectable text box lets you copy manually.
+This horse wordle filters a five-letter subset out of the CMU Pronouncing Dictionary. That gives a broad but imperfect vocabulary: plenty of everyday words, a few unusual ones, and occasional gaps where you expect a familiar word to work. A rejection never costs a guess, so the failure mode is mild. If a word refuses to submit, try a synonym rather than assuming the board is broken.
 
-The statistics panel shows completed games, win percentage and the distribution of successful guess counts. A one-guess win lands in the first bar. Losses count toward games played and win percentage but are not added to a successful-guess bar. Reopening a finished result does not count as another game.
+## Small screens, keyboards, and accessibility
 
-## Mobile, keyboard and accessibility
+On a phone, the board and keyboard live in one centred column. Tap letters, use delete to correct, tap enter to submit. A physical keyboard does the same with letter keys, backspace and enter. Tab moves between controls, Escape closes dialogs and returns focus, and letter feedback is announced as text for assistive technology. A higher-contrast palette and a dark theme are available for anyone who finds the default tiles hard to read.
 
-- On phones the board and keyboard share one centered area — tap letters, use delete to correct, tap Enter to submit.
-- Physical keyboard: letter keys, Backspace, Enter.
-- `Tab` moves between controls; Enter or Space activates a focused button; Escape closes dialogs and returns focus to the opening control.
-- Reduced-motion preferences are respected and letter feedback is exposed as text.
+Progress is stored in the browser. Blocked storage, cleared site data, or a different device all mean the same thing: the record does not follow you, because there is no account and no server copy of your horse wordle history.
 
-## Common input problems
+## What this game is honestly not
 
-- **Enter does nothing** — the row has fewer than five letters, or the word is not in the dictionary. Read the message under the board; the row stays editable.
-- **Extra letters seem ignored** — five cells is the limit. Use Backspace or the on-screen delete key.
-- **Spaces, punctuation, numbers** — not accepted, and not counted as guesses.
-- **Typing after a finished round** — the keyboard is intentionally disabled. Use *Play again* (Classic) or *New game* (Unlimited); a finished daily board waits for the next UTC puzzle.
-- **Progress disappears** — guesses and settings live in this browser only. Blocked storage, cleared site data or a different device loses the record. There is no account sync.
+It is not the original, and it does not claim to be an authorised edition. It is an independent build with its own interface, dictionary and daily schedule. Anyone looking for the official product should know that going in.
 
-## Dictionary
+It is also not a competitive puzzle. A horse wordle with a published answer cannot test deduction the way a hidden-answer game does, and pretending otherwise would be dishonest. What it tests is patience, taste, and willingness to slow down for two minutes.
 
-This version uses a filtered five-letter subset of the **CMU Pronouncing Dictionary**. It accepts many everyday English words and some less common ones, but it is not a full English dictionary and not the official Wordle word list. A rejected word never costs a guess.
+## A short session worth trying
 
-## Repository purpose
+Open the classic horse wordle mode and type STARE. Read the row, then type ROSES to watch the repeated letter behave before finishing with the answer. The grid should be complete in three rows and the copy result should read 3/6. Then open the unlimited mode, discard the board immediately, and confirm that the earlier result is still intact. That checks the scoring, the mode separation and the sharing flow in under a minute, and it is the quickest way to see what a horse wordle with a known answer feels like in practice.
 
-This repo explains how Horsle works — the scoring rules, repeated-letter edge cases, mode differences and sharing flow. It is a guide, not the game's source code.
+If you would rather just play a horse wordle than read about one, the official site is https://playhorsle.com/ and the board sits above the guide, so you can start typing before you finish scrolling.
 
-Official site: **https://playhorsle.com/** · Daily puzzle: **https://playhorsle.com/horsedle/** · Unlimited: **https://playhorsle.com/unlimited/**
+That is the whole thing. Five letters, six guesses, one very familiar horse, and no reason to hurry.
