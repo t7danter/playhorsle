@@ -6,7 +6,7 @@ That single decision rewrites the experience. In an ordinary horse wordle you ar
 
 ## Why a fixed answer is more interesting than it sounds
 
-Strip away the mystery and what remains is craft. Every guess you do not need to make becomes a choice about tempo and appearance. Some players open with something dense in relevant letters and reveal a colourful grid before submitting the answer. Others go straight to the point, accept the one-row result, and move on. Neither approach is punished, because a horse wordle of this kind does not score elegance.
+Strip away the mystery and what remains is craft. Every guess you do not need to make becomes a choice about tempo and appearance. Some players open with something dense in relevant letters and reveal a colourful grid before submitting the answer. Others go straight to the point, accept the one-row result, and move on. Neither approach is punished, because this kind of game does not score elegance.
 
 A horse wordle with a stated answer is trivial to explain to someone who has never played a word game. You do not have to teach a ruleset, describe a daily schedule, or defend an arbitrary difficulty curve. You say the answer, you say six guesses, and the person is playing within seconds.
 
@@ -20,7 +20,7 @@ Submit HORSE and the round ends immediately. Six valid guesses without it end th
 
 A green tile with a check mark means the letter is correct in that exact position. A gold tile with a two-way arrow means the letter belongs somewhere else in the answer. A gray tile with a minus sign means there is no unused copy of that letter left.
 
-Each tile carries a symbol and a text label as well as a colour, so a clue never depends on someone distinguishing green from gold. The keyboard keeps the strongest signal discovered for each letter during a round, which means a later gray copy never erases a green result you already earned. In a horse wordle where the answer is known, that memory matters less for survival and more for keeping a tidy record of what your route established.
+Each tile carries a symbol and a text label as well as a colour, so a clue never depends on someone distinguishing green from gold. The keyboard keeps the strongest signal discovered for each letter during a round, which means a later gray copy never erases a green result you already earned. When the answer is known, that memory matters less for survival and more for keeping a tidy record of what your route established.
 
 ## Repeated letters, worked out
 
@@ -38,13 +38,13 @@ Try one dense opener, then a sparse one, and compare the finished grids. A horse
 
 Classic keeps a single ongoing board in the browser. Leave halfway through a word and your input returns with the submitted rows when you come back. The play-again control unlocks only after a win or a loss, which keeps one route alive until you finish it.
 
-Unlimited gives you a new board whenever you want, including during an unfinished round. Abandoning a board there is not recorded as a loss, so it is the mode for comparing openers or throwing away an experiment you regret. Both are the same horse wordle underneath; only the bookkeeping differs.
+Unlimited gives you a new board whenever you want, including during an unfinished round. Abandoning a board there is not recorded as a loss, so it is the mode for comparing openers or throwing away an experiment you regret. Both are the same game underneath; only the bookkeeping differs.
 
 The daily puzzle is a different animal. It hides a real answer for each UTC date, resets at midnight UTC, and keeps streaks with its own statistics. HORSE makes a reasonable opener there, but the hidden word is no longer the answer that a fixed horse wordle would print. If you want deduction rather than a decided route, that is the mode to open.
 
 ## Sharing, statistics, and what the numbers mean
 
-When a round ends you can copy an emoji grid built from the actual feedback, which is the standard way people post a horse wordle result into a chat. The share button opens the device sheet where the browser supports it and falls back to copying where it does not. A download option renders a PNG locally with the mode, score and tile pattern; nothing is uploaded anywhere.
+When a round ends you can copy an emoji grid built from the actual feedback, which is the standard way people post results into a chat. The share button opens the device sheet where the browser supports it and falls back to copying where it does not. A download option renders a PNG locally with the mode, score and tile pattern; nothing is uploaded anywhere.
 
 The horse wordle statistics panel counts completed games, win percentage, and the distribution of successful guess counts. A one-guess win fills the first bar. Losses affect games played and win percentage but never appear in a successful-guess bar. Reopening an old result does not count as another game, which keeps the numbers honest over a long run of short sessions.
 
@@ -56,7 +56,7 @@ This horse wordle filters a five-letter subset out of the CMU Pronouncing Dictio
 
 On a phone, the board and keyboard live in one centred column. Tap letters, use delete to correct, tap enter to submit. A physical keyboard does the same with letter keys, backspace and enter. Tab moves between controls, Escape closes dialogs and returns focus, and letter feedback is announced as text for assistive technology. A higher-contrast palette and a dark theme are available for anyone who finds the default tiles hard to read.
 
-Progress is stored in the browser. Blocked storage, cleared site data, or a different device all mean the same thing: the record does not follow you, because there is no account and no server copy of your horse wordle history.
+Progress is stored in the browser. Blocked storage, cleared site data, or a different device all mean the same thing: the record does not follow you, because there is no account and no server copy of your history.
 
 ## What this game is honestly not
 
@@ -66,7 +66,7 @@ It is also not a competitive puzzle. A horse wordle with a published answer cann
 
 ## A short session worth trying
 
-Open the classic horse wordle mode and type STARE. Read the row, then type ROSES to watch the repeated letter behave before finishing with the answer. The grid should be complete in three rows and the copy result should read 3/6. Then open the unlimited mode, discard the board immediately, and confirm that the earlier result is still intact. That checks the scoring, the mode separation and the sharing flow in under a minute, and it is the quickest way to see what a horse wordle with a known answer feels like in practice.
+Open the classic mode and type STARE. Read the row, then type ROSES to watch the repeated letter behave before finishing with the answer. The grid should be complete in three rows and the copy result should read 3/6. Then open the unlimited mode, discard the board immediately, and confirm that the earlier result is still intact. That checks the scoring, the mode separation and the sharing flow in under a minute, and it is the quickest way to see what a horse wordle with a known answer feels like in practice.
 
 If you would rather just play a horse wordle than read about one, the official site is https://playhorsle.com/ and the board sits above the guide, so you can start typing before you finish scrolling.
 
